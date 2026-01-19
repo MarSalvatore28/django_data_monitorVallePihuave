@@ -132,4 +132,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
+# API URL
 API_URL = 'https://jsonplaceholder.typicode.com/posts'
+
+# Configuración de autenticación
+# Fallo: acceso sin autenticación
+LOGIN_URL = '/login/'
+
+# Éxito: luego de autenticación exitosa
+LOGIN_REDIRECT_URL = '/'
